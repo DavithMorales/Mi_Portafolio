@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Davith</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </header>
+    </div>
+
+    <!--Sección inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Davith Morales</h1>
+            <h2>Ingeniero de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/david.e.morales.9/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/david_espejo_24/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/jaheld-davith-espejo-morales-a6aa0327a/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Sobre mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion"> 
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Davith Morales </span>una persona apasionada por la tecnología y el desarrollo web. Me encanta estar al tanto de las últimas tendencias en el mundo tecnológico y aplicarlas en mis proyectos. Disfruto explorando nuevas herramientas y lenguajes de programación, y tengo un fuerte interés en crear soluciones innovadoras y eficientes. El desarrollo web, en particular, me fascina por su capacidad de transformar ideas en experiencias interactivas y funcionales </p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-07-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3232451864
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            david.espejo067@gmail.com
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            Chiquinquirá, Colombia
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3232451864
+                        </li>
+                        <li>
+                            <strong>Profesión</strong>
+                            <span>Ingeniero de Sistemas</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3 class="int">Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>PELICULAS</span>                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-notes-medical"></i>
+                            <span>SALUD</span>                            
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-roof"></i>
+                            <span>FAMILIA</span>                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <a href="Curriculum Davith Morales.pdf" download="Curriculum-Davith Morales">
+                <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Carrera Profesional de Ingeniería de Sistemas</h4>
+                        <span class="casa">Fundación Universitaria de San Gil - UNISANGIL</span>
+                        <span class="fecha">2018 - 2023</span>
+                        <p>Realicé mi carrera profesional universitaria en Ingeniería de Sistemas en la Fundación Universitaria de San Gil - UNISANGIL. Durante mi formación, adquirí sólidos conocimientos en áreas clave como programación, bases de datos, redes de comunicación y seguridad informática. Esta educación me proporcionó una base sólida para enfrentar desafíos técnicos y desarrollar soluciones innovadoras en el campo de la tecnología. Mi paso por UNISANGIL no solo me permitió obtener competencias técnicas avanzadas, sino también desarrollar habilidades analíticas y de resolución de problemas que aplico en mi carrera profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Crehana</h4>
+                        <span class="casa">Curso de HTML, CSS y JavaScript</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Completé un curso en la plataforma CREHANA, especializándome en HTML, CSS y JavaScript. Estos cursos me permitieron profundizar mis conocimientos y habilidades en desarrollo web, enfocándome en las mejores prácticas y las tecnologías más recientes del sector. A través de esta formación, adquirí competencias avanzadas en la creación de sitios web interactivos y dinámicos, así como en el diseño de interfaces de usuario intuitivas y atractivas. La experiencia en CREHANA complementó mi formación académica y profesional, reforzando mi capacidad para entregar soluciones web de alta calidad.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bootcamp de Análisis de Datos</h4>
+                        <span class="casa">Universidad Sergio Arboleda</span>
+                        <span class="fecha">2024</span>
+                        <p>Participé en un intensivo bootcamp de Análisis de Datos ofrecido por la Universidad Sergio Arboleda, donde adquirí habilidades avanzadas en la manipulación y análisis de grandes volúmenes de datos. Durante el programa, me familiaricé con diversas herramientas y técnicas estadísticas, así como con lenguajes de programación y software especializados en análisis de datos. Esta formación me permitió desarrollar la capacidad de interpretar datos complejos, identificar tendencias y patrones, y generar insights valiosos para la toma de decisiones informadas. El bootcamp fue una experiencia enriquecedora que fortaleció mi perfil profesional y mi capacidad para abordar proyectos de análisis de datos con rigor y precisión.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Ingeniero de Sistemas</h3>
+                    <div class="item der">
+                        <h4>Ingeniero TIC</h4>
+                        <span class="casa">Alcaldía de Chiquinquirá</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Tengo experiencia trabajando en la Alcaldía de Chiquinquirá, donde desempeñé un papel crucial en el diseño y la implementación de modelos y protocolos de seguridad de la información. Durante mi tiempo en la alcaldía, desarrollé estrategias efectivas para proteger los datos sensibles, asegurando la confidencialidad, integridad y disponibilidad de la información. Esto implicó la creación de políticas de seguridad, la capacitación del personal en prácticas seguras, y la supervisión de sistemas tecnológicos para garantizar el cumplimiento de las normativas y estándares de seguridad. Mi trabajo contribuyó significativamente a fortalecer la infraestructura de seguridad de la información de la Alcaldía, permitiendo una gestión más segura y eficiente de la información municipal.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Frontend</h4>
+                        <span class="casa">Autónomo</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>Tengo experiencia en el desarrollo autónomo de páginas web utilizando las tecnologías HTML, CSS y JavaScript. A lo largo de mi carrera, he creado diversos sitios web, aplicando principios de diseño responsivo y asegurando una excelente experiencia de usuario. He utilizado HTML para estructurar el contenido de manera lógica y semántica, CSS para estilizar y mejorar la apariencia visual, y JavaScript para añadir interactividad y dinamismo a las páginas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Frontend</h4>
+                        <span class="casa">Autónomo</span>
+                        <span class="fecha">2024</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus laborum repudiandae commodi nostrum eligendi autem ex quas a tempora doloribus esse, id consequuntur at numquam delectus. Distinctio maiores numquam iure.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a class="proyecto-link" href="https://open-legs.surge.sh/">
+                    <img src="img/Tablas.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Mi primer página</h3>
+                        <p>Página HTML y CSS Responsive</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a class="proyecto-link" href="https://github.com/Davith10M/Postres-y-Cafeter-a.git">
+                    <img src="img/Cofee&Cake.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Cofee & Cake</h3>
+                        <p>Pagina Web Responsive con JS</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseños Creativos</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseños Creativos</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseños Creativos</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseños Creativos</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form id="form" autocomplete="off">
+                        <input type="text" placeholder="Tú Nombre" name="Nombre" required pattern="[A-Za-z\s]+" title="Sólo se permiten letras y espacios" autocomplete="off">
+                        <input type="tel" placeholder="Número telefónico" name="Teléfono" required pattern="\d+" title="Sólo se permiten números" autocomplete="off">
+                        <input type="email" placeholder="Dirección de correo" name="Correo" required autocomplete="off">
+                        <input type="text" placeholder="Tema" name="Tema" required maxlength="100" title="Máximo 100 caracteres" autocomplete="off">
+                        <textarea name="Mensaje" cols="30" rows="10" placeholder="Mensaje" required maxlength="5000" title="Máximo 5000 caracteres" autocomplete="off"></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </form>
+                    <div id="success-message" class="hidden">
+                        Envío Exitoso
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/Ubicación.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Boyacá - Colombia, Chiquinquirá
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Contáctame: 3232451864
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: david.espejo067@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+    <a href="#inicio" class="arriba">
+    <i class="fa-solid fa-angles-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.facebook.com/david.e.morales.9/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/david_espejo_24/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/jaheld-davith-espejo-morales-a6aa0327a/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
