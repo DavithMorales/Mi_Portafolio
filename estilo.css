@@ -302,13 +302,13 @@ html{
     0%{width: 0%;}
     100%{width: 85%;}
 }
-.skills .skill .wordpress{
+.skills .skill .SQL{
     width: 0%;
-    animation: 2s wordpress forwards;
+    animation: 2s SQL forwards;
 }
-@keyframes wordpress {
+@keyframes SQL {
     0%{width: 0%;}
-    100%{width: 81%;}
+    100%{width: 88%;}
 }
 
 .skills .skill .comunicacion{
